@@ -1,0 +1,5 @@
+- var aMenu = [{'text':'home','link':'/'},{'text':'add','link':'/new'}]
+ul.menu
+  each item in aMenu
+    li
+      a(href=item.link) #{item.text}

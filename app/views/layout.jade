@@ -1,0 +1,13 @@
+doctype html
+html
+  head
+    title= title
+    script(src="/javascripts/lib/jQueryWrap.js")
+    script(src="/javascripts/bootstrap3/js/bootstrap.min.js")
+    script(src="/javascripts/lib/modernizr.custom.js")
+    script(src="/javascripts/lib/jquery-ui.js")
+    link(rel='stylesheet', href='/javascripts/bootstrap3/css/bootstrap.min.css')
+    link(rel='stylesheet', href='/stylesheets/style.css')
+  body
+    include ./include/menu
+    block content

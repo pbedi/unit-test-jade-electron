@@ -1,0 +1,25 @@
+body {
+  padding: 50px;
+  font: 14px "Georgia", verdana, "times new roman";
+}
+
+a {
+  color: #00B7FF;
+}
+ul.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+ul.menu li {
+  display: block;
+  width: 80px;
+  float: left;
+}
+div.submit {
+  padding: 10px 20px;
+}
+span.new {
+  width: 100px;
+  display: inline-block;
+}

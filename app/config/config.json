@@ -1,0 +1,7 @@
+{
+  "server": {
+		"host": "localhost.berkeleygroup.co.uk",
+		"port": 3000
+	}
+  
+}

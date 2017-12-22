@@ -1,0 +1,22 @@
+extends layout
+
+block content
+  h1= title
+  div
+    div
+      span.new Name:
+      b=development.name
+    div
+      span.new Description
+      b=development.description
+    div
+      span.new Image path:
+      b=development.imagepath
+    div
+      span.new DevelopmentID:
+      b=development.developmentid
+    div
+      span.new is Active:
+      b=development.isactive
+    div.back
+      a(href='/') home

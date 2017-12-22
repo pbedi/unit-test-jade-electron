@@ -1,0 +1,34 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{data[1].name}
+  a(href="/users") users
+  - var foo = "bar"
+  p= foo
+
+  - var language = "Jade"
+  if language == "Jade"
+   p Awesome
+  else
+   p Not awesome
+  each item in ['foo', 'bar', 'baz']
+   li= item
+
+  ul
+    each item in data
+      li= item.name
+
+  ul
+    each item in dbData
+      li= item.developmentid
+        = " "
+        = item.name
+        = " "
+        = item.description
+        = " "
+        a(href='/#{item._id}/edit') Edit
+        = " "
+        a(href='/#{item._id}') Show
+        = " "
+        a(href='/#{item._id}/remove') Delete
